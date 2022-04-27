@@ -10,7 +10,7 @@ let User = require('../model/user');
 let jwt = require('jsonwebtoken');
 let bcrypt = require('bcryptjs');
 let config = require('../config');
-let VerifyToken = require('./VerifyToken');
+let VerifyToken = require('./verifyToken');
 
 
 router.post('/register', userAlreadyExist, function(req, res) {
